@@ -22,7 +22,7 @@ This tutorial shows how to classify images of bean plants into 3 categories:
 2. **Angular Leaf Spot disease**
 3. **Bean Rust disease**
 
-<img style="float:none" align="left" src="assets/3classes.png" width="75%">
+<img style="float:none" align="left" src="assets/3classes.png" width="100%">
 
 
 In this tutorial we will follow a standard machine learning workflow:
@@ -174,7 +174,7 @@ for i in range(1, n_cols*n_rows + 1):
     ax.imshow(image[i, :, :, :], cmap = plt.get_cmap("jet"))  
  ```
  
-<img style="float:none" align="left" src="assets/visualization.png" width="90%">
+<img style="float:none" align="left" src="assets/visualization.png" width="100%">
 
 
 ### Step 2: Build the classification model
@@ -187,6 +187,8 @@ One of the most popular ways to build a deep learning model is using Keras [Sequ
 * **Dense:** will perform a linear operation on the input vector. Also known as *fully-connected* layer.
 
 # Set the hyperparameters:
+
+```python
 num_filters = 15
 filter_size = 10
 pool_size = 4
@@ -194,6 +196,7 @@ strides = 2
 fc_output = 128
 drop_probability = 0.25
 learning_rate = 0.001
+```
 
 ```python
 model = tf.keras.models.Sequential([
@@ -307,7 +310,7 @@ for i in range(1, n_cols*n_rows + 1):
     ax.imshow(image[i, :, :, :], cmap = plt.get_cmap("jet"))
 ```
 
-<img style="float:none" align="left" src="assets/test_set.png" width="90%">
+<img style="float:none" align="left" src="assets/test_set.png" width="100%">
 
 In most cases the network outputs the correct label which is still very impressive given its simple architecture. The second-to-last example was misclassified because the actual label is 2 (healthy) whereas the predicted label is 1 (bean rust disease). That makes sense because although the front leaf close to the camera is healthy, the leaves in the background appear to have some yellow patches and normally could be classified as having disease.
 
