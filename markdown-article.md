@@ -284,7 +284,7 @@ test_loss, test_acc = model.evaluate(ds_test)
 print('\n Final test accuracy:', test_acc)
 ```
 
-83.5% accuracy on the test set is not a bad outcome given this simple network. It represents that roughly any $7^{th}$It is also a good idea to compare actual and predicted class labels from the test set to see if there is any kind of bias towards specific image features. Remember that the softmax output is normalized class probabilities so to get the most probable label for each image we have to apply `argmax()` function on the softmax output across rows (`axis = 1`):
+83.5% accuracy on the test set is not a bad outcome given this simple network. It is also a good idea to compare actual and predicted class labels from the test set to see if there is any kind of bias towards specific image features. Remember that the softmax output is normalized class probabilities so to get the most probable label for each image we have to apply `argmax()` function on the softmax output across rows (`axis = 1`):
 
 ```python
 probability_model = tf.keras.Sequential([model, tf.keras.layers.Softmax()])
