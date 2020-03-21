@@ -1,6 +1,6 @@
 # Detecting disease on beans leaves using image classification
 
-> This article was originally written for [Meritocracy.is](https://meritocracy.is/blog/)
+> *This article was originally written for [Meritocracy.is](https://meritocracy.is/blog/)*
 
 
 Food security is one of the United Nations Sustainable Goals. Yet still, every day more than 25,000 people die of hunger. Overall, there are more than [800 million](https://www.worldometers.info/) undernourished people in the world because of food shortages or inefficient crop yield. Early disease detection on plant leaves can reduce world's crop losses.
@@ -17,3 +17,6 @@ Our goal is to **develop a classifier that can predict one of these conditions**
 
 This code contains a basic convolutional neural network architecture and achieves 80 % accuracy on the test set (so far).
 
+## Extensions:
+
+- m
