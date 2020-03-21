@@ -2,7 +2,7 @@ tensorflow
 tensorflow-datasets
 jupyter
 matplotlib
-jupyter
 seaborn
 packaging
 sklearn
+
