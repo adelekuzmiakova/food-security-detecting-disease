@@ -21,4 +21,5 @@ This code contains a basic convolutional neural network architecture and achieve
 
 - **Network depth**: what happens if we add or remove convolutional layers?
 - **Image augmentation**: what if we apply geometric transformations, such as scaling, cropping, to training images to add diversity and increase the training set size?
+- **Image resizing**: what is we crop images with `tf.image.resize_with_crop_or_pad` to reduce background noise?
 - **Fine-tuning the hyper-parameters**: what if we try other hyperparameter values?
