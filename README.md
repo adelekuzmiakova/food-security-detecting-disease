@@ -11,7 +11,7 @@ In this project I looked at `beans` [dataset](https://github.com/AI-Lab-Makerere
 2. **bean rust disease**
 3. **healthy**
 
-![Alt text](assets/3classes.png?raw=true "3 Classes")
+<img class="two" src="assets/visualization.png" width="90%" >
 
 Our goal is to **develop a classifier that can predict one of these conditions**. Every image in this dataset is 500-by-500 pixels large and was taken by a smartphone camera on the farm. 
 
@@ -19,4 +19,6 @@ This code contains a basic convolutional neural network architecture and achieve
 
 ## Extensions:
 
-- m
+- **Network depth**: what happens if we add or remove convolutional layers?
+- **Image augmentation**: what if we apply geometric transformations, such as scaling, cropping, to training images to add diversity and increase the training set size?
+- **Fine-tuning the hyper-parameters**: what if we try other hyperparameter values?
